@@ -1,41 +1,44 @@
 const heart = document.getElementById("heart");
 const coine = document.getElementById("coine");
 const copy = document.getElementById("copy");
-const copyBtn = document.getElementsByClassName("copyBtn");
+const copyBtnnumbers = document.getElementsByClassName("copyBtn");
 const callBtn = document.getElementsByClassName("callBtn");
 const heartBtn = document.getElementsByClassName("fa-heart");
 const clearBtn = document.getElementById("clear-btn");
 
-let copyes = 1;
-let heard = 1;
+let copyCount = 1;
+let heartCount = 1;
 
+// Heart button
 for (const hearts of heartBtn) {
   hearts.addEventListener("click", function () {
-    heart.innerText = heard++;
+    heart.innerText = heartCount++;
   });
 }
 
-for (const copye of copyBtn) {
-  copye.addEventListener("click", function () {
-    copy.innerText = copyes++;
+// Copy Button
+for (const copyBtnNumber of copyBtnnumbers) {
+  copyBtnNumber.addEventListener("click", function () {
+    copyNumber.innerText = copyCount++;
 
-    const parents = copye.parentNode.parentNode.children[2].children[0];
-    const copy1 = parents.innerText;
+    const copyNumber = copyNumber.parentNode.parentNode.children[2].children[0];
+    const copye = copyNumber.innerText;
 
-    navigator.clipboard.writeText(copy1);
-    alert(`The number has been copied : ${copy1}`);
+    navigator.clipboard.writeText(copye);
+    alert(`The number has been copied : ${copye}`);
   });
 }
 
+// History and Call section
 const history = document.getElementById("history");
 
 for (const call of callBtn) {
   call.addEventListener("click", function () {
-    const calls = call.parentNode.parentNode.children[1].children[0];
-    const number = call.parentNode.parentNode.children[2].children[0];
+    const callName = call.parentNode.parentNode.children[1].children[0];
+    const callNumber = call.parentNode.parentNode.children[2].children[0];
 
-    const call1 = calls.innerText;
-    const number1 = number.innerText;
+    const callNameUniq = callName.innerText;
+    const callNumberUniq = callNumber.innerText;
 
     if (coine.innerText <= 0) {
       alert("❌ কল করার জন্য তোমার কাছে পর্যাপ্ত কয়েন নেই!");
@@ -48,8 +51,8 @@ for (const call of callBtn) {
     div.innerHTML = `
       <div class="flex items-center justify-between p-3 bg-[#fafafa] mb-4">
           <div>
-               <h4 class='text-[18px] font-medium'>${call1}</h4>
-               <p class='text-[18px] font-medium text-gray-500'>${number1}</p>
+               <h4 class='text-[18px] font-medium'>${callNameUniq}</h4>
+               <p class='text-[18px] font-medium text-gray-500'>${callNumberUniq}</p>
           </div>
          <div>
          <h4>${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}</h4>
@@ -58,7 +61,7 @@ for (const call of callBtn) {
     
     `;
     history.appendChild(div);
-    alert(`📞 ${call1} - ${number1} এ কল দেওয়া হচ্ছে`);
+    alert(`📞 ${callNameUniq} - ${callNumberUniq} এ কল দেওয়া হচ্ছে`);
   });
 }
 
