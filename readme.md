@@ -129,6 +129,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
    appendChild (বা prepend, before, after) → DOM এ ঢোকায়।
 
 3. What is **Event Bubbling** and how does it work? 4. What is **Event Delegation** in JavaScript? Why is it useful? 5. What is the difference between **preventDefault() and stopPropagation()** methods?
+
    answer:
    document.getElementById("list").addEventListener("click", (e) => {
    if(e.target.tagName === "LI"){
@@ -137,6 +138,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
    });
 
 4. What is Event Delegation in JavaScript? Why is it useful?
+
    answer:
    document.getElementById("list").addEventListener("click", (e) => {
    if(e.target.tagName === "LI"){
@@ -147,6 +149,7 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
    কেন দরকার → আলাদা আলাদা child এ listener না দিয়ে, parent এর একটাই listener দিয়ে সব manage করা যায়। Performance বাড়ে, dynamic element এও কাজ করে।
 
 5. What is the difference between preventDefault() and stopPropagation() methods?
+
    answer:
    preventDefault() → element এর default কাজ বন্ধ করে (যেমন: form submit, link redirect)।
    stopPropagation() → event টা parent এ আর bubble হতে দেয় না।
