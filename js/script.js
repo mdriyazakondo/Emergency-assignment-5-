@@ -50,7 +50,7 @@ for (const call of callBtn) {
     const div = document.createElement("div");
     const date = new Date();
     div.innerHTML = `
-      <div class="flex items-center justify-between p-3 bg-[#fafafa] mb-4">
+      <div class="flex items-center justify-between p-3 bg-[#fafafa] mb-4 mx-4">
           <div>
                <h4 class='text-[18px] font-medium'>${callNameUniq}</h4>
                <p class='text-[18px] font-medium text-gray-500'>${callNumberUniq}</p>
