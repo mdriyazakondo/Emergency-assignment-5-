@@ -19,9 +19,10 @@ for (const hearts of heartBtn) {
 // Copy Button
 for (const copyBtnNumber of copyBtnnumbers) {
   copyBtnNumber.addEventListener("click", function () {
-    copyNumber.innerText = copyCount++;
+    copy.innerText = copyCount++;
 
-    const copyNumber = copyNumber.parentNode.parentNode.children[2].children[0];
+    const copyNumber =
+      copyBtnNumber.parentNode.parentNode.children[2].children[0];
     const copye = copyNumber.innerText;
 
     navigator.clipboard.writeText(copye);
