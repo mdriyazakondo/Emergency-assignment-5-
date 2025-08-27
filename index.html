@@ -16,21 +16,399 @@
     />
   </head>
   <body>
-    <!--? Header Section start -->
+    <!--   Header Section start -->
     <header>
-      <!--? Navbar Section Start -->
-      <nav></nav>
-      <!--? Navbar Section End -->
+      <!-- Navbar Section Start -->
+      <nav class="flex items-center justify-between mx-3 md:mx-15 my-4">
+        <div>
+          <img src="./assets/Logo2.png" alt="" class="w-32 md:w-48" />
+        </div>
+        <div class="flex justify-between items-center gap-1 md:gap-2">
+          <div
+            class="flex items-center justify-center bg-[#ecfff0] py-2 px-3 md:px-5 rounded-full gap-1"
+          >
+            <span class="text-xl font-semibold" id="heart">0</span>
+            <img src="./assets/heart.png" alt="" class="h-5 w-5" />
+          </div>
+          <div
+            class="flex items-center justify-center bg-[#ecfff0] py-2 px-3 md:px-5 rounded-full gap-1"
+          >
+            <span class="text-xl font-semibold" id="coine">100</span>
+            <img src="./assets/coin.png" alt="" class="h-5 w-5" />
+          </div>
+          <div
+            class="flex items-center justify-center bg-[#00a63e] py-2 px-3 md:px-5 rounded-full gap-1"
+          >
+            <span class="text-xs md:text-xl font-semibold text-white" id="copy"
+              >0</span
+            >
+            <p class="text-xs md:text-xl font-semibold text-white">Copy</p>
+          </div>
+        </div>
+      </nav>
 
-      <!--? Hero Section Start -->
-      <div></div>
-      <!--? Hero SEction End -->
+      <!-- Hero Section Start -->
+      <div
+        class="flex flex-col items-center justify-center bg-gradient-to-r from-[#013424] via-[#016243] to-[#013626] py-5 space-y-2"
+      >
+        <img src="./assets/logo-dark.png" alt="" class="w-23" />
+        <h4 class="text-2xl md:text-3xl font-semibold text-[#FFFFFF]">
+          জরুরি সেবা ডিরেক্টরি
+        </h4>
+        <p class="text-[#FFFFFF] text-center px-2">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
     </header>
-    <!--? Header Section End -->
 
-    <!--? Main Section Start -->
-    <main></main>
-    <!--? Main Section End -->
+    <!-- Main Section Start -->
+    <main>
+      <section
+        class="grid grid-cols-1 md:grid-cols-12 gap-2 mt-12 max-w-[1800px] mx-auto"
+      >
+        <div class="mx-4 md:mx-0 md:col-span-9">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 4 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 5 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 6 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 7 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 8 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+            <!-- Card 9 -->
+            <div class="shadow-sm p-4 rounded-md space-y-4">
+              <div class="flex items-center justify-between">
+                <img src="./assets/emergency.png" alt="" class="w-8" />
+                <i
+                  class="fa-regular fa-heart cursor-pointer text-xl text-gray-500 hover:text-red-600"
+                ></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-2xl text-black">জাতীয় জরুরি সেবা</h4>
+                <p class="text-gray-600 font-medium">National Emergency</p>
+              </div>
+              <div>
+                <h3 class="text-3xl font-bold">999</h3>
+                <p class="w-22 py-1 px-2 rounded-full bg-[#f2f2f2] text-center">
+                  সার্বজনীন
+                </p>
+              </div>
+              <div class="flex items-center justify-between gap-3">
+                <button
+                  class="w-full hover:bg-green-500 bg-transparent text-green-500 border py-2 flex items-center justify-center gap-2 hover:text-[#ffffff] rounded-md cursor-pointer"
+                  id="copyBtn"
+                >
+                  <i class="fa-regular fa-copy"></i>
+                  <span class="font-medium">copy</span>
+                </button>
+
+                <button
+                  class="w-full bg-green-500 hover:bg-transparent hover:text-green-500 border py-2 flex items-center justify-center gap-2 text-[#ffffff] rounded-md cursor-pointer"
+                  id="callBtn"
+                >
+                  <i class="fa-solid fa-phone"></i>
+                  <span class="font-medium">call</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="mx-4 md:mx-0 md:col-span-3 shadow-md">
+          <div>
+            <div class="flex items-center justify-between p-4">
+              <h4 class="flex items-center justify-center gap-2 font-semibold">
+                <i class="fa-regular fa-clock text-gray-500"></i>
+                <span>Call History</span>
+              </h4>
+              <button class="py-2 px-6 bg-[#00a63e] text-white rounded-full cursor-pointer font-semibold">Clear</button>
+            </div>
+            <div></div>
+          </div>
+        </aside>
+      </section>
+    </main>
 
     <script src="js/script.js"></script>
   </body>
