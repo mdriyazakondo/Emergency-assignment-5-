@@ -112,21 +112,21 @@ You have to create a `Readme.md` file. and write down following questions. Dont 
 
 1. What is the difference between **getElementById, getElementsByClassName, and querySelector / querySelectorAll**?
 
-answer :
-getElementById("id") → নির্দিষ্ট id এর একটা element দেয়।
-getElementsByClassName("class") → ওই class এর সব element রিটার্ন করে HTMLCollection (live list) আকারে।
-querySelector("css-selector") → প্রথম ম্যাচ হওয়া element দেয়।
-querySelectorAll("css-selector") → সবগুলো ম্যাচ হওয়া element দেয় NodeList (not live) আকারে।
+   answer :
+   getElementById("id") → নির্দিষ্ট id এর একটা element দেয়।
+   getElementsByClassName("class") → ওই class এর সব element রিটার্ন করে HTMLCollection (live list) আকারে।
+   querySelector("css-selector") → প্রথম ম্যাচ হওয়া element দেয়।
+   querySelectorAll("css-selector") → সবগুলো ম্যাচ হওয়া element দেয় NodeList (not live) আকারে।
 
 2. How do you **create and insert a new element into the DOM**?
 
-answer:
-const div = document.createElement("div");
-div.textContent = "Hello World!";
-document.body.appendChild(div);
+   answer:
+   const div = document.createElement("div");
+   div.textContent = "Hello World!";
+   document.body.appendChild(div);
 
-createElement → নতুন element বানায়।
-appendChild (বা prepend, before, after) → DOM এ ঢোকায়।
+   createElement → নতুন element বানায়।
+   appendChild (বা prepend, before, after) → DOM এ ঢোকায়।
 
 3. What is **Event Bubbling** and how does it work? 4. What is **Event Delegation** in JavaScript? Why is it useful? 5. What is the difference between **preventDefault() and stopPropagation()** methods?
    answer:
