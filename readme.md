@@ -23,7 +23,9 @@
 
 3. What is **Event Bubbling** and how does it work? 4. What is **Event Delegation** in JavaScript? Why is it useful? 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-   answer:
+   answer:-
+
+   Event Bubbling মানে হলো → কোনো element এ event ঘটলে সেটা প্রথমে সেই element এ trigger হয়, তারপর ধাপে ধাপে তার parent → grandparent → উপরের দিকে propagate করতে থাকে।
 
 ```js
 document.getElementById("list").addEventListener("click", (e) => {
