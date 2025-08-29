@@ -26,7 +26,7 @@ for (const copyBtnNumber of copyBtnnumbers) {
     const copye = copyNumber.innerText;
 
     navigator.clipboard.writeText(copye);
-    alert(`The number has been copied : ${copye}`);
+    alert(`আপনার নম্বরটি কপি করা হয়েছে : ${copye}`);
   });
 }
 
@@ -42,7 +42,9 @@ for (const call of callBtn) {
     const callNumberUniq = callNumber.innerText;
 
     if (coine.innerText <= 0) {
-      alert("❌ কল করার জন্য তোমার কাছে পর্যাপ্ত কয়েন নেই!");
+      alert(
+        "❌ কল করার জন্য আপনার কাছে পর্যাপ্ত কয়েন নেই কল দিতে গেলে আপনার ২০ টকেন লাগবে !"
+      );
       return;
     }
 
